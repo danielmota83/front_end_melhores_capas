@@ -1,0 +1,40 @@
+.DeletaCapaModal {
+    margin-top: -20px;
+  }
+  
+  .DeletaCapaModal > div {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+  }
+  
+  .DeletaCapaModal__img {
+    position: absolute;
+    right: 0px;
+    bottom: 10px;
+    width: 80px;
+  }
+  
+  .DeletaCapaModal__confirmar,
+  .DeletaCapaModal__cancelar {
+    border: none;
+    border-radius: 5px;
+    font-family: ms Madi;
+    padding: 5px;
+    max-width: 280px;
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    width: 48%;
+    color: white;
+  }
+  
+  .DeletaCapaModal__confirmar {
+    background-color: goldenrod;
+  }
+  
+  .DeletaCapaModal__cancelar {
+    background-color: red;
+  }
+  
