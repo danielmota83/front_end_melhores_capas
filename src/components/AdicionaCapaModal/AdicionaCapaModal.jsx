@@ -1,7 +1,7 @@
 import "./AdicionaCapaModal.css";
 import { useState, useEffect } from "react";
 import Modal from "components/Modal/Modal";
-import { capaService } from "services/CapaService";
+import { CapaService } from "services/CapaService";
 import { ActionMode } from "../constants/index";
 
 function AdicionaCapaModal({ closeModal, onCreateCapa, mode, capaToUpdate, onUpdateCapa}) {
@@ -53,8 +53,8 @@ function AdicionaCapaModal({ closeModal, onCreateCapa, mode, capaToUpdate, onUpd
         };
 
         const serviceCall = {
-            [ActionMode.NORMAL]: () => capaService.create(capa),
-            [ActionMode.ATUALIZAR]: () => capaService.updtateById(capaToUpdate?.id, capa),
+            [ActionMode.NORMAL]: () => CapaService.create(capa),
+            [ActionMode.ATUALIZAR]: () => CapaService.updtateById(capaToUpdate?.id, capa),
           }
 
           const response = await serviceCall[mode]();

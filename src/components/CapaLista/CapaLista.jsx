@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import CapaListaItem from 'components/CapaListaItem/CapaListaItem';
-import { capaService } from 'services/CapaService';
+import { CapaService } from 'services/CapaService';
 import './CapaLista.css';
 import CapaDetalhesModal from 'components/CapaDetalhesModal/CapaDetalhesModal';
 import {ActionMode} from "components/constants"
@@ -42,7 +42,7 @@ const [capasFiltradas, setCapasFiltradas] = useState([]);
   };
 
   const getCapaById = async (capaId) => {
-    const response = await capaService.getById(capaId);
+    const response = await CapaService.getById(capaId);
     const mapper = {
       [ActionMode.NORMAL]: () => setCapaModal(response),
       [ActionMode.ATUALIZAR]: () => updateCapa(response),
@@ -52,7 +52,7 @@ const [capasFiltradas, setCapasFiltradas] = useState([]);
   };  
 
   const getLista = async () =>{
-    const response = await capaService.getLista();
+    const response = await CapaService.getLista();
     setCapas(response);
   }
 

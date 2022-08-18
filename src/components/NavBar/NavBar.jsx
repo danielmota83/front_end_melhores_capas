@@ -13,12 +13,13 @@ function NavBar({ createCapa, updateCapa, deleteCapa, mode }) {
           <button
             type="button"
             className="Opcoes__capa Capa"
-            onClick={() => createCapa()}
+             onClick={() => createCapa()}
           >
             <div className="add">
               <img
                 src={add}
                 width="40px"
+                background-color = "none"
                 className="Atualizar__icone"
                 alt="Adicionar Capa"
               />
@@ -48,7 +49,7 @@ function NavBar({ createCapa, updateCapa, deleteCapa, mode }) {
             <img
               src={trash}
               className="Atualizar__icone"
-              alt="Deletar Lanche"
+              alt="Deletar Capa"
             />
           </button>
         </div>

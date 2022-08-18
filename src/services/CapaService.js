@@ -21,7 +21,7 @@ const parseTransformLista = (response) =>
 const parseTransformItem = (response) =>
   parseResponse(response).then(transformCapa);
 
- export const capaService = {
+ export const CapaService = {
   getLista: () =>
     fetch(Api.CapaLista(), { method: 'GET' }).then(parseTransformLista),
   getById: (id) =>

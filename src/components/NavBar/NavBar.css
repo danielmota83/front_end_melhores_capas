@@ -53,20 +53,40 @@
     justify-content: space-between;
     position: fixed;
     top: 2.5rem;
-    right: 4.5rem;
-    background-color: rgba(97, 187, 220, 0.358);
+    right: 4.5rem;background-color: rgba(97, 187, 220, 0.358);
     border-radius: 20 rem;
     padding: 2 rem;
     z-index: 9999;
     align-items: center;
     vertical-align: middle;
-    width: 12%;
+    width: 8rem;
   }
 
   .Atualizar__icone{
     width: 1.5rem;
-    background: none;
+    background-color: none;
+    transform: translateY(3px);
   }
 
+  .Atualizar__icone:hover{
+    transform: scale(1.2);
+  }
   
-  
+  .Opcoes__capa.Capa{
+    
+    background: none;
+    border: none;
+    padding: .3rem;
+  }
+
+  .update-capa.false{
+    background: none;
+    border: none;
+    padding: .3rem;
+  }
+
+  .delete-capa.false{
+    background: none;
+    border: none;
+    padding: .3rem;
+  }

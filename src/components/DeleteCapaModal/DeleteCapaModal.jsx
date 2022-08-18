@@ -1,6 +1,6 @@
 import "./DeleteCapaModal.css"
 import Modal from "components/Modal/Modal";
-import { capaService } from "services/CapaService";
+import { CapaService } from "services/CapaService";
 
 function DeleteCapaModal({
     closeModal,
@@ -8,7 +8,7 @@ function DeleteCapaModal({
     onDeleteCapa,
   }) {
     const handleDelete = async (capa) => {
-      await capaService.deleteById(capa.id);
+      await CapaService.deleteById(capa.id);
       onDeleteCapa(capa);
       closeModal();
     };
