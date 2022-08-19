@@ -11,8 +11,8 @@ const transformCapa = (capa) => {
    album: capa.album,
    ano: capa.ano,
    fotoUrl: capa.fotoUrl,
-   descricao: capa.descricao,
-  };
+   descricao: capa.descricao
+     };
 };
 
 const parseTransformLista = (response) =>
