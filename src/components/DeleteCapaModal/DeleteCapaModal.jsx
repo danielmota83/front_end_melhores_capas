@@ -8,7 +8,7 @@ function DeleteCapaModal({
     onDeleteCapa,
   }) {
     const handleDelete = async (capa) => {
-      await CapaService.deleteById(capa.id);
+      await CapaService.deleteById (capa.id);
       onDeleteCapa(capa);
       closeModal();
     };

@@ -44,7 +44,7 @@ const parseTransformItem = (response) =>
         "Content-Type": "application/json",
       },
     }).then(parseResponse),
-  deleteById: (id) =>
+  deleteById:(id) =>
     fetch(Api.deleteCapaById(id), { method: 'DELETE' }).then(parseResponse),
 };
 

@@ -1,4 +1,4 @@
-export const capas = [
+export const capa = [
     {
       album: "Clube da Esquina",
       descricao:
