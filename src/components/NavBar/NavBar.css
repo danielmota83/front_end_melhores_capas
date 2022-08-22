@@ -1,3 +1,4 @@
+
 .Header {
   
     position: relative;
@@ -29,13 +30,17 @@
 
   
   @media (max-width: 840px) {
-  
+    .Logo__icone.img {
+      src: 'assets/melhores capas min.png';
+    width: 100%;
+  }
     
   }
   
   @media (max-width: 400px) {
  
-      .Logo {
+      .Logo__icone.img {
+        src: 'assets/melhores capas min.png';
       width: 100%;
     }
     }

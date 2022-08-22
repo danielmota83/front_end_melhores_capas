@@ -6,7 +6,7 @@ const transformCapa = (capa) => {
   
   return {
     ...capa,
-    id: capa._id,
+   id: capa._id,
    artista: capa.artista,
    album: capa.album,
    ano: capa.ano,

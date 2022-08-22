@@ -88,7 +88,7 @@ function CapaLista({
       />
 
       <div className="CapaLista">
-        {capasFiltradas.map((capa, index) => 
+        {capasFiltradas.map((capa, index) => (
           <div className="capaListaItem">
             <CapaListaItem
               mode={mode}
@@ -101,7 +101,7 @@ function CapaLista({
               clickItem={(capaId) => getCapaById(capaId)}
             />
           </div>
-        )}
+        ))}
         {capaModal && 
           <CapaDetalhesModal
             capa={capaModal}
