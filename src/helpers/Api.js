@@ -8,6 +8,6 @@ const CapaContext = {
   };
   
   export const Api = {
-    baseUrl: "http://localhost:3000",
+    baseUrl: "https://api-melhores-capas.herokuapp.com",
     ...CapaContext,
   };
