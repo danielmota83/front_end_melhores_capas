@@ -22,7 +22,8 @@
   .Logo__icone {
   position: relative;
   top: 0.2 rem;
-    width: 100%;
+    width: 50%;
+    border-radius: 1rem;
     
     
   }
@@ -30,8 +31,8 @@
 
   
   @media (max-width: 840px) {
-    .Logo__icone.img {
-      src: 'assets/melhores capas min.png';
+    .Logo__icone {
+    
     width: 100%;
   }
     
@@ -39,8 +40,8 @@
   
   @media (max-width: 400px) {
  
-      .Logo__icone.img {
-        src: 'assets/melhores capas min.png';
+      .Logo__icone {
+       
       width: 100%;
     }
     }

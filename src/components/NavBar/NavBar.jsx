@@ -1,6 +1,6 @@
 import './NavBar.css';
 import add from 'assets/icons/add.svg';
-import logo from 'assets/melhores capas.png';
+import logo from 'assets/capa.png';
 import edit from 'assets/icons/edit.svg';
 import trash from 'assets/icons/trash.svg';
 import { ActionMode } from '../constants/index';
