@@ -29,13 +29,11 @@ function CapaLista({
     setCapaSelecionada({ ...capaSelecionada, ...capa });
   };
   const filtroPorTitulo = ({ target }) => {
-    const lista = [...capas].filter(({ titulo }) =>
-      matchByText(titulo, target.value),
+    const lista = [...capas].filter(({ album }) =>
+      matchByText(album, target.value),
     );
     setCapasFiltradas(lista);
   };
-
- 
 
   const removerItem = (capaIndex) => {
     const capa = {
@@ -71,7 +69,6 @@ function CapaLista({
     [capas],
   );
 
-
   useEffect(() => {
     if (capaCriada && !capas.map(({ id }) => id).includes(capaCriada.id)) {
       adicionaCapaNaLista(capaCriada);
@@ -94,7 +91,7 @@ function CapaLista({
               mode={mode}
               key={`CapaListaItem-${index}`}
               capa={capa}
-              quantidadeSelecionada={capaSelecionada[index]}
+              quantidadeSelecionada={capa[index]}
               index={index}
               onAdd={(index) => adicionarItem(index)}
               onRemove={(index) => removerItem(index)}
@@ -102,12 +99,12 @@ function CapaLista({
             />
           </div>
         ))}
-        {capaModal && 
+        {capaModal && (
           <CapaDetalhesModal
             capa={capaModal}
             closeModal={() => setCapaModal(false)}
           />
-        }
+        )}
         ;
       </div>
     </div>

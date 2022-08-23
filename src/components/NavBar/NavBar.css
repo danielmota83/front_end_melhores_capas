@@ -1,98 +1,84 @@
-
 .Header {
-  
-    position: relative;
-  }
-  
-   .Header__logo{
-    align-items: center;
-    display: flex;
-  }
-  
-  .Logo__titulo {
-    
-    font-family: "Exo";
-    font-weight: 700;
-    font-size: 1.5 rem;
-    flex-wrap: wrap;
-    align-content:flex-end;
+  position: relative;
+}
 
-  }
-  
-  .Logo__icone {
+.Header__logo {
+  align-items: center;
+  display: flex;
+}
+
+.Logo__titulo {
+  font-family: 'Exo';
+  font-weight: 700;
+  font-size: 1.5 rem;
+  flex-wrap: wrap;
+  align-content: flex-end;
+}
+
+.Logo__icone {
   position: relative;
   top: 0.2 rem;
-    width: 50%;
-    border-radius: 1rem;
-    
-    
-  }
-  
+  width: 50%;
+  border-radius: 1rem;
+}
 
-  
-  @media (max-width: 840px) {
-    .Logo__icone {
-    
+@media (max-width: 840px) {
+  .Logo__icone {
     width: 100%;
   }
-    
-  }
-  
-  @media (max-width: 400px) {
- 
-      .Logo__icone {
-       
-      width: 100%;
-    }
-    }
- 
-  .Capa__icone {
-    cursor: pointer;
-    width: 20%;
-    
-     
-  }
+}
 
-  .row {
-    display:flex;
-    justify-items: center;
-    justify-content: space-between;
-    position: fixed;
-    top: 2.5rem;
-    right: 4.5rem;background-color: rgba(97, 187, 220, 0.358);
-    border-radius: 20 rem;
-    padding: 2 rem;
-    z-index: 9999;
-    align-items: center;
-    vertical-align: middle;
-    width: 10rem;
+@media (max-width: 400px) {
+  .Logo__icone {
+    width: 100%;
   }
+}
 
-  .Atualizar__icone{
-    width: 1.5rem;
-    background-color: none;
-    transform: translateY(3px);
-  }
+.Capa__icone {
+  cursor: pointer;
+  width: 20%;
+}
 
-  .Atualizar__icone:hover{
-    transform: scale(1.2);
-  }
-  
-  .Opcoes__capa.Capa{
-    
-    background: none;
-    border: none;
-    padding: .3rem;
-  }
+.row {
+  display: flex;
+  justify-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 2.5rem;
+  right: 4.5rem;
+  background-color: rgba(97, 187, 220, 0.358);
+  border-radius: 20 rem;
+  padding: 2 rem;
+  z-index: 9999;
+  align-items: center;
+  vertical-align: middle;
+  width: 10rem;
+}
 
-  .update-capa.false{
-    background: none;
-    border: none;
-    padding: .3rem;
-  }
+.Atualizar__icone {
+  width: 1.5rem;
+  background-color: none;
+  transform: translateY(3px);
+}
 
-  .delete-capa.false{
-    background: none;
-    border: none;
-    padding: .3rem;
-  }
+.Atualizar__icone:hover {
+  transform: scale(1.2);
+}
+
+.Opcoes__capa.Capa {
+  background: none;
+  border: none;
+  padding: 0.3rem;
+}
+
+.update-capa.false {
+  background: none;
+  border: none;
+  padding: 0.3rem;
+}
+
+.delete-capa.false {
+  background: none;
+  border: none;
+  padding: 0.3rem;
+}

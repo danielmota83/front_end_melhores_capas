@@ -1,7 +1,5 @@
 import './CapaDetalhesModal.css';
 import Modal from 'components/Modal/Modal';
-import {verificaTipo} from "views/Home/Home"
-
 
 function CapaDetalhesModal({ capa, closeModal }) {
   return (
@@ -9,10 +7,7 @@ function CapaDetalhesModal({ capa, closeModal }) {
       <div className="CapaDetalhesModal">
         <div>
           <div className="CapaDetalhesModal__album"> {capa.album} </div>
-          <div className="CapaDetalhesModal__ano">
-            {' '}
-            {capa.ano}{' '}
-          </div>
+          <div className="CapaDetalhesModal__ano"> {capa.ano} </div>
           <img
             className="CapaDetalhesModal__foto"
             src={capa.fotoUrl}
@@ -20,10 +15,9 @@ function CapaDetalhesModal({ capa, closeModal }) {
           />
           <div className="CapaDetalhesModal__descricao">
             {' '}
-           
-              <b>O que saber:</b> {capa.descricao}{' '}
-            </div>
-          
+            <b>O que saber:</b> {capa.descricao}{' '}
+          </div>
+
           <div className="CapaDetalhesModal__descricao">
             {' '}
             <b>Descrição:</b> {capa.descricao}{' '}
@@ -34,9 +28,7 @@ function CapaDetalhesModal({ capa, closeModal }) {
           src={capa.fotoUrl}
           alt={`Capa de ${capa.artista}`}
         />
-        <div>{verificaTipo(capa.tipo)}</div>
       </div>
-      
     </Modal>
   );
 }

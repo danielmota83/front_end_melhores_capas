@@ -5,152 +5,145 @@
   cursor: pointer;
   transition: all 0.5s;
   padding: 1.5rem;
-  
-  }
+}
 
-  .CapaListaItem--disable {
-    box-shadow: 0px 0px 7px rgb(239, 219, 34);
-  }
-  
-  .CapaListaItem--disable,
-  .CapaListaItem--disable .CapaListaItem__preco {
-    color: gray;
-  }
+.CapaListaItem--disable {
+  box-shadow: 0px 0px 7px rgb(239, 219, 34);
+}
 
-  .CapaListaItem--disable .CapaListaItem__badge {
-    display: none;
+.CapaListaItem--disable,
+.CapaListaItem--disable .CapaListaItem__preco {
+  color: gray;
+}
+
+.CapaListaItem--disable .CapaListaItem__badge {
+  display: none;
+}
+
+.CapaListaItem--disable img {
+  filter: grayscale(100%);
+}
+
+.CapaListaItem--disable button:disabled {
+  background-color: gray;
+}
+
+.CapaListaItem__tag {
+  background-color: rgb(238, 229, 57) !important;
+  color: black !important;
+  /* position: absolute; */
+  font-size: 0.6em;
+  border-radius: 5px;
+  padding: 5px;
+  top: -15px;
+  left: -10px;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 400px) {
+  .CapaListaItem {
+    width: 210px;
+    height: 180px;
   }
-  
-  .CapaListaItem--disable img {
-    filter: grayscale(100%);
-  }
-  
-  .CapaListaItem--disable button:disabled {
-    background-color: gray;
-  }
-  
-  .CapaListaItem__tag {
-    background-color: rgb(238, 229, 57) !important;
-    color: black !important;
-    /* position: absolute; */
-    font-size: 0.6em;
-    border-radius: 5px;
-    padding: 5px;
-    top: -15px;
-    left: -10px;
-    letter-spacing: 1px;
-  }
-  
-  @media (max-width: 400px) {
-    .CapaListaItem {
-      width: 210px;
-      height: 180px;
-    }
-  }
-  .capaLista__container{
+}
+.capaLista__container {
   flex-wrap: wrap;
-    padding: 1rem;
-    /* background-color: rgba(22, 159, 187, 0.292); */
-    margin-top: 1rem;
-    border-radius:8px;
-    box-sizing:content-box;
-    width: 100%;
-    box-shadow: 0.2rem 0.2rem 0.1rem 0.1rem rgba(22, 159, 187, 0.292);;
-  }
-  
-  .capaListaItem img {
-    
-    width: 20rem;
-      }
+  padding: 1rem;
+  /* background-color: rgba(22, 159, 187, 0.292); */
+  margin-top: 1rem;
+  border-radius: 8px;
+  box-sizing: content-box;
+  width: 100%;
+  box-shadow: 0.2rem 0.2rem 0.1rem 0.1rem rgba(22, 159, 187, 0.292);
+}
 
-     
-  .CapaListaItem__fotoUrl{
-    padding-top: 0.5rem;
-  }
+.capaListaItem img {
+  width: 20rem;
+}
 
+.CapaListaItem__fotoUrl {
+  padding-top: 0.5rem;
+}
 
-  .CapaListaItem__artista{
-    font-size: 1.5em;
-    font-weight: 700;
-  }
+.CapaListaItem__artista {
+  font-size: 1.5em;
+  font-weight: 700;
+}
 
- 
-  .CapaListaItem__descricao {
-    font-size: 1rem;
-    text-align: justify;
-    margin-top: 0.6rem;
-  }
-  
-  .CapaListaItem__ano {
-    color: rgb(152, 139, 0);
-   padding-top: 0.6rem;
-   font-weight: 550;
-  }
-  
-  .Acoes {
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .Acoes__adicionar,
-  .Acoes__remover {
-    border: none;
-    color: black;
-    border-radius: 5px;
-    font-family: "Exo", sans-serif;
-    padding: 5px;
-    max-width: 280px;
-    text-align: center;
-    font-weight: 700;
-    text-transform: uppercase;
-    cursor: pointer;
-    width: 48%;
-  }
-  
-  .Acoes__remover {
-    background-color: red;
-  }
-  
-  .Acoes__adicionar {
-    background-color: rgb(232, 232, 1);
-  }
-  
-  .Acoes__adicionar--preencher {
-    width: 100%;
-  }
-  
+.CapaListaItem__descricao {
+  font-size: 1rem;
+  text-align: justify;
+  margin-top: 0.6rem;
+}
 
+.CapaListaItem__ano {
+  color: rgb(152, 139, 0);
+  padding-top: 0.6rem;
+  font-weight: 550;
+}
 
-  .CapaListaItem {
-    cursor: pointer;
-  }
+.Acoes {
+  display: flex;
+  justify-content: space-between;
+}
 
-  .CapaListaItem__badge {
-    background-color: rgb(255, 158, 47);
-    width: 30px;
-    height: 25px;
-    font-weight: 600;
-    text-align: center;
-    vertical-align: middle;
-    position: relative;
-    color: black;
-    font-size: .8em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    top: -9px;
-    left: -9px;
-  }
+.Acoes__adicionar,
+.Acoes__remover {
+  border: none;
+  color: black;
+  border-radius: 5px;
+  font-family: 'Exo', sans-serif;
+  padding: 5px;
+  max-width: 280px;
+  text-align: center;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+  width: 48%;
+}
 
-  .CapaListaItem {
-    cursor: pointer;
-  }
+.Acoes__remover {
+  background-color: red;
+}
 
-  .CapaListaItem--deletar {
-    box-shadow: 0px 0px 7px rgba(211, 0, 0);
-  }
-  
-  .CapaListaItem__tag--deletar {
-    background-color: rgba(255, 0, 0, 0.804) !important;
-  }
+.Acoes__adicionar {
+  background-color: rgb(232, 232, 1);
+}
+
+.Acoes__adicionar--preencher {
+  width: 100%;
+}
+
+.CapaListaItem {
+  cursor: pointer;
+}
+
+.CapaListaItem__badge {
+  background-color: rgb(255, 158, 47);
+  width: 30px;
+  height: 25px;
+  font-weight: 600;
+  text-align: center;
+  vertical-align: middle;
+  position: relative;
+  color: black;
+  font-size: 0.8em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  top: -9px;
+  left: -9px;
+}
+
+.CapaListaItem {
+  cursor: pointer;
+}
+
+.CapaListaItem--deletar {
+  box-shadow: 0px 0px 7px rgba(211, 0, 0);
+}
+
+.CapaListaItem__tag--deletar {
+  background-color: rgba(255, 0, 0, 0.804) !important;
+}

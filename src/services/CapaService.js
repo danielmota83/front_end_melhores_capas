@@ -3,16 +3,15 @@ import { Api } from 'helpers/Api';
 const parseResponse = (response) => response.json();
 
 const transformCapa = (capa) => {
-  
   return {
     ...capa,
-   id: capa._id,
-   artista: capa.artista,
-   album: capa.album,
-   ano: capa.ano,
-   fotoUrl: capa.fotoUrl,
-   descricao: capa.descricao
-     };
+    id: capa._id,
+    artista: capa.artista,
+    album: capa.album,
+    ano: capa.ano,
+    fotoUrl: capa.fotoUrl,
+    descricao: capa.descricao,
+  };
 };
 
 const parseTransformLista = (response) =>
@@ -21,7 +20,7 @@ const parseTransformLista = (response) =>
 const parseTransformItem = (response) =>
   parseResponse(response).then(transformCapa);
 
- export const CapaService = {
+export const CapaService = {
   getLista: () =>
     fetch(Api.CapaLista(), { method: 'GET' }).then(parseTransformLista),
   getById: (id) =>
@@ -35,17 +34,15 @@ const parseTransformItem = (response) =>
         'Content-Type': 'application/json',
       },
     }).then(parseTransformItem),
-    updtateById: (id, capa) =>
+  updtateById: (id, capa) =>
     fetch(Api.updateCapaById(id), {
-      method: "PUT",
+      method: 'PUT',
       body: JSON.stringify(capa),
-      mode: "cors",
+      mode: 'cors',
       headers: {
-        "Content-Type": "application/json",
+        'Content-Type': 'application/json',
       },
     }).then(parseResponse),
-  deleteById:(id) =>
+  deleteById: (id) =>
     fetch(Api.deleteCapaById(id), { method: 'DELETE' }).then(parseResponse),
 };
-
-

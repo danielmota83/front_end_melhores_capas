@@ -79,7 +79,3 @@ function Home() {
 }
 
 export default Home;
-
-export function verificaTipo(tipo) {
-
-}

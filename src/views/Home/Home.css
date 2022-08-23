@@ -1,27 +1,21 @@
 .Home {
-   
-    background-image: radial-gradient(
-      farthest-corner at 40px 40px,
-      #bfeaf3 60%,
-      rgba(214, 234, 231, 0.5) 100%
-    );
-       margin: 0.5rem;
-       /* padding-bottom: 8rem; */
-    padding: 0.5rem;
-  }
+  background-image: radial-gradient(
+    farthest-corner at 40px 40px,
+    #bfeaf3 60%,
+    rgba(214, 234, 231, 0.5) 100%
+  );
+  margin: 0.5rem;
+  /* padding-bottom: 8rem; */
+  padding: 0.5rem;
+}
 
+.Home__container {
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 350px) {
   .Home__container {
-
-    align-items: center;
-    justify-content: center;
-  
-   
+    justify-content: unset;
   }
-  
-  @media (max-width: 350px) {
-    .Home__container {
-      justify-content: unset;
-    }
-  }
-
-  
+}
